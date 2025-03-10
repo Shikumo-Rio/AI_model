@@ -11,7 +11,7 @@ import logging
 # MySQL Configuration
 db_config = {
     "host": "localhost",
-    "user": "core_3root",
+    "user": "core3_root",
     "password": "reorio345",  # Replace with your MySQL password
     "database": "core3_bot"
 }
