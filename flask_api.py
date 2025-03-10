@@ -11,9 +11,9 @@ import logging
 # MySQL Configuration
 db_config = {
     "host": "localhost",
-    "user": "root",
-    "password": "",  # Replace with your MySQL password
-    "database": "bot"
+    "user": "core3_root",
+    "password": "reorio345",  # Replace with your MySQL password
+    "database": "core3_bot"
 }
 
 def get_db_connection():
