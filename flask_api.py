@@ -25,15 +25,17 @@ def get_db_connection():
         print(f"Error connecting to MySQL: {e}")
     return None
 
-# Initialize Flask app - removed duplicate
 app = Flask(__name__)
+
+# ✅ ALLOW SPECIFIC ORIGINS
 CORS(app, resources={
     r"/*": {
-        "origins": "*",  # Allow all origins for testing
+        "origins": ["https://core3.paradisehoteltomasmorato.com"],  # ✅ Allow Your Domain
         "methods": ["GET", "POST", "OPTIONS"],
-        "allow_headers": ["Content-Type"]
+        "allow_headers": ["Content-Type", "Authorization"]
     }
 })
+
 log = logging.getLogger('werkzeug')
 log.setLevel(logging.DEBUG)
 
