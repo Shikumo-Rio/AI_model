@@ -10,7 +10,7 @@ import logging
 
 # MySQL Configuration
 db_config = {
-    "host": "localhost",
+    "host": "13.228.225.19",
     "user": "core3_root",
     "password": "reorio345",  # Replace with your MySQL password
     "database": "core3_bot"
